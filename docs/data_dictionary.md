@@ -35,3 +35,36 @@ The calendar dataset maps M5 day identifiers to actual dates and contains calend
 - `event_name_1` and `event_type_1` contain 1,807 null values.
 - `event_name_2` and `event_type_2` contain 1,964 null values.
 - All other columns contain no null values.
+
+- ## 2. sales_train_validation.csv
+
+The sales dataset contains historical daily unit sales for each item and store combination.
+
+| Column | Data Type | Description |
+|---|---|---|
+| id | string | Unique identifier for an item-store sales series |
+| item_id | string | Unique product identifier |
+| dept_id | string | Department the item belongs to |
+| cat_id | string | Product category |
+| store_id | string | Store identifier |
+| state_id | string | State where the store is located |
+| d_1 to d_1913 | integer | Daily unit sales for each sequential M5 day |
+
+### Profiling Summary
+
+- Rows: 30,490
+- Columns: 1,919
+- Identifier columns: 6
+- Daily sales columns: 1,913
+- First sales day: d_1 (2011-01-29)
+- Last sales day: d_1913 (2016-04-24)
+- Unique items: 3,049
+- Unique departments: 7
+- Unique categories: 3
+- Unique stores: 10
+- Unique states: 3
+- Categories: FOODS, HOBBIES, HOUSEHOLD
+- States: CA, TX, WI
+- Minimum daily unit sales: 0
+- Maximum daily unit sales: 763
+- No null values were found in the dataset.
