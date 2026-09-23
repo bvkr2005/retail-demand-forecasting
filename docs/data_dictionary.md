@@ -68,3 +68,27 @@ The sales dataset contains historical daily unit sales for each item and store c
 - Minimum daily unit sales: 0
 - Maximum daily unit sales: 763
 - No null values were found in the dataset.
+
+
+## 3. sell_prices.csv
+
+The sell prices dataset contains weekly selling prices for items at each store.
+
+| Column | Data Type | Description |
+|---|---|---|
+| store_id | string | Store identifier |
+| item_id | string | Unique product identifier |
+| wm_yr_wk | integer | Walmart year-week identifier used to connect prices with the calendar |
+| sell_price | double | Selling price of the item for the specified store and week |
+
+### Profiling Summary
+
+- Rows: 6,841,121
+- Columns: 4
+- Unique stores: 10
+- Unique items: 3,049
+- Unique weeks: 282
+- Date range: 2011-01-29 to 2016-06-19
+- Minimum selling price: $0.01
+- Maximum selling price: $107.32
+- No null values were found in any of the four columns.
