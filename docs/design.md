@@ -21,3 +21,16 @@ The main goals of this project are:
 5. Evaluate forecast accuracy using appropriate forecasting metrics.
 6. Use demand forecasts to support inventory planning and reduce stockouts and excess inventory.
 7. Create dashboards and reports that make forecasting results easy to understand.
+
+## Success Metrics
+
+The project will be considered successful when:
+
+1. All three M5 datasets are successfully loaded and processed without losing important data.
+2. Data quality checks identify missing values, duplicate records, and unexpected values.
+3. Historical sales data is transformed into a clean format that supports forecasting.
+4. Forecasts are generated for a 28-day demand horizon.
+5. Forecast accuracy is evaluated using WRMSSE, the primary M5 forecasting metric.
+6. Forecast results can be analyzed by item, store, and state.
+7. Inventory recommendations can be created from forecasted demand.
+8. The final pipeline, documentation, and analysis are reproducible and stored in GitHub.
